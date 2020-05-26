@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run",
+      "type": "shell",
+      "command": "scripts/run.py run ${input:port.stm32l475vg}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Monitor",
+      "type": "shell",
+      "command": "scripts/run.py monitor ${input:port.stm32l475vg}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "scripts/run.py build ${input:port.stm32l475vg}",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "port.stm32l475vg",
+      "description": "The port for STM32L475VG",
+      "default": "/dev/ttyACM0",
+      "type": "promptString"
+    }
+  ]
+}

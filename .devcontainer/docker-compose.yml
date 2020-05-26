@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  dev:
+    build: .
+    image: firmware-dev-env:v1
+    # We do not want to recreate the container or have multiple instances of it running ever
+    container_name: firmware-dev-env
+    volumes:
+      # Mount SSH Keys as readonly
+      - ~/.ssh:/root/.ssh-localhost:ro
+      # Mount gitconfig
+      - ~/.gitconfig:/root/.gitconfig:ro
+      # Mount working folder
+      - ../:/home/workspace
+    # Device access doesn't seem to work on my Mac :(
+      # Mount devices
+      - /dev:/dev
+    # Need to run privileged mode to enable dev devices access
+    privileged: true
+    environment:
+      - LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+    # The following commands ensure that the container stays active
+    entrypoint: bash
+    stdin_open: true
+    tty: true

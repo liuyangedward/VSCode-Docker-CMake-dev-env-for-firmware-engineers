@@ -1,0 +1,18 @@
+{
+    "name": "Firmware dev env",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/home/workspace",
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "twxs.cmake",
+        "marus25.cortex-debug",
+        "cschlosser.doxdocgen",
+        "bjr.head-file-guard",
+        "amapleaf.linker-script",
+        "wayou.vscode-todo-highlight"
+    ],
+    "shutdownAction": "stopCompose",
+    "postCreateCommand": "cd .devcontainer && chmod +x setup.sh && ./setup.sh"
+}
