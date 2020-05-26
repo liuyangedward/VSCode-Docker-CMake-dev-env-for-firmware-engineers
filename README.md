@@ -26,4 +26,14 @@ You need to install VSCode, docker and docker compose to your host machine. Open
 
 ## Known issues:
 
-The openOCD integration doesn't look the cleanest to me, though it works.
+- The openOCD integration doesn't look the cleanest to me, though it works.
+- The automation (python and bash script) is not 100% clean.
+- I feel that I could have written more comments to make things clearer. After all, to fully understand why this dev env works is non-trivial.
+
+## Finally
+
+This work is larged inspired by a few firmware engineers that I've worked with in the past. I'm very glad to work with them and I apprecate those people for their inspiration. Please let me know if you encounter any problem when using this project.
+
+My linked in profile: https://www.linkedin.com/in/edward-liu-b65b0ab3/
+
+Reach me out you're passionate about firmware development, or if you want to work with me on interesting bussiness ideas.
