@@ -14,7 +14,7 @@ This dev env includes:
 
 - OpenOCD: A free programming&debugging tool. A debugger is optional in software development but I find it still quite useful for firmware devlopment.
 
-## Why do you share it?
+## Why do I share it?
 
 Nowadays MCU vendors tend to provide their own toolchains and IDEs. Some developers use STM32CubeIDE, some use KEIL, some use IAR embedded workbench. Nothing is standardized in the firmware industry. I'm tired of learning all the IDEs and their updates :( whenever I work on a new MCU or move to a new company. I believe there are other firmware engineers like me facing the same issue, thats why I open-sourced it.
 
